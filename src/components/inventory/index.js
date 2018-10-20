@@ -2,13 +2,14 @@ import {Component} from 'react';
 import React from 'react';
 import { BrowserRouter ,Route, Link } from 'react-router-dom';
 import './inventory.css';
-import Checkout from '../checkout';
+import InitialCheckout from '../initialCheckout';
+import Promotions from '../promotions';
 
 class Inventory extends Component {
   constructor(props){
 
     super(props);
-
+    
     this.state = {};
   }
 
@@ -77,8 +78,9 @@ class Inventory extends Component {
       <div className="Inventory">
        <BrowserRouter>
         <div>
-            <h1>Inventory</h1>
-            <Checkout/>
+            <h1>Inventory and promos</h1>
+            <InitialCheckout/>
+            <Promotions/>
             
         </div>
        </BrowserRouter>
