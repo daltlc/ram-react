@@ -4,6 +4,7 @@ import { BrowserRouter ,Route, Link } from 'react-router-dom';
 import './inventory.css';
 import InitialCheckout from '../initialCheckout';
 import Promotions from '../promotions';
+import $ from 'jquery';
 
 class Inventory extends Component {
   constructor(props){
@@ -11,9 +12,7 @@ class Inventory extends Component {
     super(props);
     
     this.state = {
-       inStock:false,
-       total:0,
-
+    
     };
   }
 
@@ -76,10 +75,20 @@ class Inventory extends Component {
 
         }
 
+        componentDidMount(){
+            let total = 0;
+            let card = document.getElementById("card");
+            console.log(card);
+            // card.onclick(function() {
+            //     total++;
+            //     console.log(total);
+            }
+        
+
         
   render() {
     return (
-      <div className="Inventory">
+
        <BrowserRouter>
         <div>
             <h1>Inventory and promos</h1>
@@ -88,7 +97,6 @@ class Inventory extends Component {
             
         </div>
        </BrowserRouter>
-      </div>
     );
   }
 }
