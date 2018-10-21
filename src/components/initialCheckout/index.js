@@ -6,16 +6,17 @@ import $ from 'jquery';
 
 
 
+
 const InitialCheckout = () => {
     return(
       <button id='quick-play' onClick = {() =>{
         console.log('clicked');
-        $( "#promotions" ).hide();
-        // $( "#inventory" ).hide();
+       
+
 
         $(function () {
           $.get("http://jst.edchavez.com/api/inventory/getInventory/", function (item) {
-          
+
           });
       })
         
