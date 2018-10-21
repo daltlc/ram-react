@@ -11,7 +11,9 @@ class Inventory extends Component {
     super(props);
     
     this.state = {
-       
+       inStock:false,
+       total:0,
+
     };
   }
 
