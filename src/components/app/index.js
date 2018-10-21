@@ -3,6 +3,7 @@ import React from 'react';
 import { BrowserRouter ,Route, Link } from 'react-router-dom';
 import './App.css';
 import Inventory from '../inventory';
+import InitialCheckout from '../initialCheckout';
 
 class App extends Component {
   constructor(props){
@@ -10,44 +11,10 @@ class App extends Component {
     super(props);
 
     this.state = {
-      // promotionsOK:false,
-      // shippingOK:false,
-      // checkoutOK:false,
 
     };
 
-    // this.getPromotionsOK = this.togglePromotionsOK.bind(this);
-    // this.getShippingOK = this.toggleShippingOK.bind(this);
-    // this.getCheckoutOK = this.toggleCheckoutOK.bind(this);
-
   }
-    // togglePromotionsOK() {
-    //   let toggleState = !this.state.inventoryOK;
-    //   this.setState({ inventoryOK: toggleState});
-    // }
-
-    // getPromotionsOK(){
-    //   return this.state.inventoryOK;
-    // }
-
-    // toggleShippingOK() {
-    //   let toggleState = !this.state.shippingOK;
-    //   this.setState({ shippingOK: toggleState});
-    // }
-
-    // getShippingOK(){
-    //   return this.state.shippingOK;
-    // }
-
-    // toggleCheckoutOK() {
-    //   let toggleState = !this.state.checkoutOK;
-    //   this.setState({ checkoutOK: toggleState});
-    // }
-
-    // getCheckoutOK(){
-    //   return this.state.checkoutOK;
-    // }
-
   
 
 
@@ -61,6 +28,8 @@ class App extends Component {
         <Route exact path='/' render={props => {
               return <Inventory/>;
             }}/>
+
+            <InitialCheckout/>
         </div>
        </BrowserRouter>
       </div>
