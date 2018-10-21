@@ -10,7 +10,9 @@ class Inventory extends Component {
 
     super(props);
     
-    this.state = {};
+    this.state = {
+       
+    };
   }
 
     componentWillMount() {
