@@ -4,5 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## How to use
 1.Clone or download - navigate to project folder in terminal.
-2. >npm install
+2. ```
+npm install
+```
 3.
