@@ -40,9 +40,9 @@ class Inventory extends Component {
                     const description = document.createElement('p');
                     const inStock = document.createElement('p');
                     items.description = items.description.substring(0, 300); // Limit to 300 chars
-                    description.textContent = `${items.description}`; // End with an ellipses
-                    price.textContent = `${items.price}`;
-                    inStock.textContent = `InStock: ${items.inStock}`;
+                    description.textContent = `Description:  ${items.description}`; // End with an ellipses
+                    price.textContent = `Price:  $${items.price}`;
+                    inStock.textContent = `In Stock: ${items.inStock}`;
 
             // Append the cards to the container element
                     container.appendChild(card);

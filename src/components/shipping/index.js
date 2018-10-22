@@ -38,7 +38,7 @@ class Shipping extends Component {
               const shipCost = document.createElement('p');
               shipOptionId.textContent = `ShipOption: ${shipping.shipOptionId}`; // Limit to 300 chars
               carrierName.textContent = `Carrier: ${shipping.carrierName}`; // End with an ellipses
-              shipCost.textContent = `Shipping Cost ${shipping.shipCost}`;
+              shipCost.textContent = `Shipping Cost $${shipping.shipCost}`;
               
       
           // Append the shippings to the container element

@@ -36,9 +36,11 @@ class Promotions extends Component {
             const startDate = document.createElement('p');
             const endDate = document.createElement('p');
             const promoAmt = document.createElement('p');
+            const promoAmtoff = document.createElement('p');
             startDate.textContent = `Start: ${promo.start}`; // Limit to 300 chars
             endDate.textContent = `End: ${promo.end}`; // End with an ellipses
-            promoAmt.textContent = `Must buy at-least ${promo.minimumOrderValue}`;
+            promoAmt.textContent = `Minimin Order for Promo: ${promo.minimumOrderValue}`;
+            promoAmtoff.textContent = `Amount off: ${promo.promoAmt}`;
             
     
         // Append the promos to the container element
@@ -49,6 +51,7 @@ class Promotions extends Component {
                 promos.appendChild(startDate);
                 promos.appendChild(endDate);
                 promos.appendChild(promoAmt);
+                promos.appendChild(promoAmtoff);
             });
             } else {
                 return;
