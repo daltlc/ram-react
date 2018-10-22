@@ -8,36 +8,36 @@ import $ from 'jquery';
 
 
 const InitialCheckout = () => {
-    return(
-      <button id='quick-play' onClick = {() =>{
-        console.log('clicked');
+  return(
+    <button id='quick-play' onClick = {() =>{
+      console.log('clicked');
        
 
 
-        $(function () {
-          $.get("http://jst.edchavez.com/api/inventory/getInventory/", function (item) {
+      $(function () {
+        $.get('http://jst.edchavez.com/api/inventory/getInventory/', function (item) {
 
-          });
-      })
+        });
+      });
         
-        //before button is cliked I need to select some things from inv, that will possibly update the state of the promos down below until 20.
-        //once things are selected, hit checkout, will load those items you selected/if promo is applied/ then shows shipping methods
-        //once shipping method is selected, either load or then hit a button to load final checkout, which displays, items you want, promo, 
-        //price and selected shipping method.
+      //before button is cliked I need to select some things from inv, that will possibly update the state of the promos down below until 20.
+      //once things are selected, hit checkout, will load those items you selected/if promo is applied/ then shows shipping methods
+      //once shipping method is selected, either load or then hit a button to load final checkout, which displays, items you want, promo, 
+      //price and selected shipping method.
 
 
-        //submit, hides everything and just says thanks?
-        //button to go back to beggining
+      //submit, hides everything and just says thanks?
+      //button to go back to beggining
 
 
-        }}>
+    }}>
       
         Checkout
 
 
-      </button>
+    </button>
   
-    );
-  };
+  );
+};
   
-  export default InitialCheckout;
+export default InitialCheckout;

@@ -5,6 +5,7 @@ import './App.css';
 import Inventory from '../inventory';
 import Shipping from '../shipping';
 import Promotions from '../promotions';
+import Demo from '../demo';
 
 class App extends Component {
   constructor(props){
@@ -16,20 +17,22 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-       <BrowserRouter>
-        <div>
-        <Route exact path='/' render={props => {
+        <BrowserRouter>
+          <div>
+            <Route exact path='/' render={props => {
               return <Inventory/>;
             }}/>
-        <Route exact path='/' render={props => {
-              return <Shipping/>;
-            }}/>
-        <Route exact path='/' render={props => {
+            <Route exact path='/' render={props => {
               return <Promotions/>;
             }}/>
-            
-        </div>
-       </BrowserRouter>
+            <Route exact path='/' render={props => {
+              return <Shipping/>;
+            }}/>
+            <Route exact path='/demo-post' render={props => {
+              return <Demo/>;
+            }}/>
+          </div>
+        </BrowserRouter>
       </div>
     );
   }
