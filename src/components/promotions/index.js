@@ -71,13 +71,12 @@ class Promotions extends Component {
         
   render() {
     return (
-      <div className="Inventory">
        <BrowserRouter>
         <div>
             
         </div>
        </BrowserRouter>
-      </div>
+
     );
   }
 }

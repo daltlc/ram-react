@@ -92,9 +92,7 @@ class Inventory extends Component {
        <BrowserRouter>
         <div>
             <h1>Inventory and promos</h1>
-            <InitialCheckout/>
             <Promotions/>
-            
         </div>
        </BrowserRouter>
     );

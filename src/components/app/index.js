@@ -3,6 +3,7 @@ import React from 'react';
 import { BrowserRouter ,Route, Link } from 'react-router-dom';
 import './App.css';
 import Inventory from '../inventory';
+import Shipping from '../shipping';
 
 class App extends Component {
   constructor(props){
@@ -61,6 +62,10 @@ class App extends Component {
         <Route exact path='/' render={props => {
               return <Inventory/>;
             }}/>
+        <Route exact path='/' render={props => {
+              return <Shipping/>;
+            }}/>
+            
         </div>
        </BrowserRouter>
       </div>
