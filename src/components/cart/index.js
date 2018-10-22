@@ -1,26 +1,26 @@
-import React from 'react';
-import {Component} from 'react';
+// import React from 'react';
+// import {Component} from 'react';
 
 
-class Cart extends Component {
+// class Cart extends Component {
 
-   constructor(props){
-       super(props);
+//    constructor(props){
+//        super(props);
 
-       this.state={}
+//        this.state={}
 
-   }
+//    }
 
-   componentDidMount(){
-       let total:0;
-       let item = document.getElementById("card");
+//    componentDidMount(){
+//        let total:0;
+//        let item = document.getElementById("card");
        
-   }
+//    }
 
-   render(){
+//    render(){
 
 
-       return;
-   }
+//        return;
+//    }
     
-}
+// }
