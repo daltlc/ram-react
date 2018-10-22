@@ -6,7 +6,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 1.Clone or download - navigate to project folder in terminal
 
-2. ``` npm install ```
+2.``` npm install ```
 
 3.Then run ```npm run start``` to start up the react-app and run on localhost:3000
+
+4.In browser, navigate to https://localhost:3000
 
