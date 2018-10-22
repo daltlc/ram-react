@@ -33,7 +33,7 @@ class App extends Component {
             <Route exact path='/' render={props => {
               return <Shipping/>;
             }}/>
-            <Route exact path='/demo-post' render={props => {
+            <Route exact path='/' render={props => {
               return <Demo/>;
             }}/>
           </div>

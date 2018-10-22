@@ -10,7 +10,7 @@ class DemoLink extends Component {
     return(
       <nav>
         <ul>
-          <button><Link to='/demo-post'>Post Demo</Link></button>
+          <li><Link to='/'>Post Demo</Link></li>
         </ul>
       </nav>
     );

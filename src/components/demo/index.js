@@ -11,7 +11,9 @@ class Demo extends Component {
 
   componentWillMount(){
     $(function () {
-
+      let request = new XMLHttpRequest();
+      request.open('POST','http://jst.edchavez.com/api/order/',true);
+      request.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
       let order = {
         'merchantId': 'sample string 1',
         'orderItems': [
@@ -52,12 +54,17 @@ class Demo extends Component {
         'orderDate': 1,
         'signature': 'sample string 7',
       };
+      request.send(order);
 
-      $.post('http://jst.edchavez.com/api/order/', function (order) {
-        console.log(order);
-        $();
-      });
+      //   $.post('http://jst.edchavez.com/api/order/', function (order) {
+      //     console.log(order);
+      //     $();
+
     });
+    
+
+
+
   }
 
   render(){
