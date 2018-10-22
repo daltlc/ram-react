@@ -6,6 +6,8 @@ import Inventory from '../inventory';
 import Shipping from '../shipping';
 import Promotions from '../promotions';
 import Demo from '../demo';
+import DemoLink from '../demo-link';
+
 
 class App extends Component {
   constructor(props){
@@ -19,6 +21,9 @@ class App extends Component {
       <div className="App">
         <BrowserRouter>
           <div>
+            <Route exact path='/' render={props => {
+              return <DemoLink/>;
+            }}/>
             <Route exact path='/' render={props => {
               return <Inventory/>;
             }}/>

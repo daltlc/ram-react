@@ -19,7 +19,7 @@
       background-color: rgba(204, 204, 204, 0.4)
     }
     .card:hover{
-        background-color: rgba(68, 68, 68, 0.4)
+        background-color: rgba(151, 151, 151, 0.4)
     }
     
     @media screen and (min-width: 600px) {

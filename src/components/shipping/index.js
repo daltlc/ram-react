@@ -73,10 +73,7 @@ class Shipping extends Component {
   render() {
     return (
       <div className="Shipping">
-        <BrowserRouter>
-          <div>
-          </div>
-        </BrowserRouter>
+        <div></div>
       </div>
     );
   }
