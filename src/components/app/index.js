@@ -4,56 +4,15 @@ import { BrowserRouter ,Route, Link } from 'react-router-dom';
 import './App.css';
 import Inventory from '../inventory';
 import Shipping from '../shipping';
+import Promotions from '../promotions';
 
 class App extends Component {
   constructor(props){
 
     super(props);
 
-    this.state = {
-      // promotionsOK:false,
-      // shippingOK:false,
-      // checkoutOK:false,
-
-    };
-
-    // this.getPromotionsOK = this.togglePromotionsOK.bind(this);
-    // this.getShippingOK = this.toggleShippingOK.bind(this);
-    // this.getCheckoutOK = this.toggleCheckoutOK.bind(this);
-
+    this.state = {};
   }
-    // togglePromotionsOK() {
-    //   let toggleState = !this.state.inventoryOK;
-    //   this.setState({ inventoryOK: toggleState});
-    // }
-
-    // getPromotionsOK(){
-    //   return this.state.inventoryOK;
-    // }
-
-    // toggleShippingOK() {
-    //   let toggleState = !this.state.shippingOK;
-    //   this.setState({ shippingOK: toggleState});
-    // }
-
-    // getShippingOK(){
-    //   return this.state.shippingOK;
-    // }
-
-    // toggleCheckoutOK() {
-    //   let toggleState = !this.state.checkoutOK;
-    //   this.setState({ checkoutOK: toggleState});
-    // }
-
-    // getCheckoutOK(){
-    //   return this.state.checkoutOK;
-    // }
-
-  
-
-
-
-
   render() {
     return (
       <div className="App">
@@ -64,6 +23,9 @@ class App extends Component {
             }}/>
         <Route exact path='/' render={props => {
               return <Shipping/>;
+            }}/>
+        <Route exact path='/' render={props => {
+              return <Promotions/>;
             }}/>
             
         </div>

@@ -28,11 +28,11 @@ class Promotions extends Component {
                 const promos = document.createElement('div');
                 promos.setAttribute('class', 'promos');
     
-        // Create an h1 and set the text content to the film's title
+        // Create an h1 and set the text content to the promo name
             const h1 = document.createElement('h1');
             h1.textContent = promo.promotionName;
 
-        // Create a p and set the text content to the film's description
+        // Create a p and set the text content to the promos description
             const startDate = document.createElement('p');
             const endDate = document.createElement('p');
             const promoAmt = document.createElement('p');
@@ -41,10 +41,10 @@ class Promotions extends Component {
             promoAmt.textContent = `Must buy at-least ${promo.minimumOrderValue}`;
             
     
-        // Append the cards to the container element
+        // Append the promos to the container element
                 container.appendChild(promos);
     
-        // Each card will contain an h1 and a p
+        // Each promos will contain an h1 and a p
                 promos.appendChild(h1);
                 promos.appendChild(startDate);
                 promos.appendChild(endDate);
@@ -71,11 +71,7 @@ class Promotions extends Component {
         
   render() {
     return (
-       <BrowserRouter>
-        <div>
-            
-        </div>
-       </BrowserRouter>
+        <div></div>
 
     );
   }

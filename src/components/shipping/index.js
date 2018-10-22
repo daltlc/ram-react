@@ -28,11 +28,11 @@ class Shipping extends Component {
                   const shippings = document.createElement('div');
                   shippings.setAttribute('class', 'shipping');
       
-          // Create an h1 and set the text content to the film's title
+          // Create an h1 and set the text content to the shipping name
               const h1 = document.createElement('h1');
               h1.textContent = shipping.shipOptionName;
   
-          // Create a p and set the text content to the film's description
+          // Create a p and set the text content to the shipping description
               const shipOptionId = document.createElement('p');
               const carrierName = document.createElement('p');
               const shipCost = document.createElement('p');
@@ -41,10 +41,10 @@ class Shipping extends Component {
               shipCost.textContent = `Shipping Cost ${shipping.shipCost}`;
               
       
-          // Append the cards to the container element
+          // Append the shippings to the container element
                   container.appendChild(shippings);
       
-          // Each card will contain an h1 and a p
+          // Each shippings will contain an h1 and a p
                   shippings.appendChild(h1);
                   shippings.appendChild(shipOptionId);
                   shippings.appendChild(carrierName);
