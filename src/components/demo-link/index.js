@@ -10,7 +10,8 @@ class DemoLink extends Component {
     return(
       <nav>
         <ul>
-          <li><Link to='/'>Post Demo</Link></li>
+          {/* <li><Link to='/'>Post Demo</Link></li> */}
+          <button type="button" className="btn btn-success">Success</button>
         </ul>
       </nav>
     );
